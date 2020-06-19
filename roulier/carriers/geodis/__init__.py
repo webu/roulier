@@ -13,3 +13,20 @@ from . import geodis_decoder_rest_ws
 from . import geodis_transport_ws
 from . import geodis_transport_edi
 from . import geodis_transport_rest_ws
+
+__all__ = [
+    'geodis',
+    'geodis_common_ws',
+    'geodis_api_ws',
+    'geodis_api_find_localite_ws',
+    'geodis_api_edi',
+    'geodis_api_rest_ws',
+    'geodis_encoder_ws',
+    'geodis_encoder_edi',
+    'geodis_encoder_rest_ws',
+    'geodis_decoder_ws',
+    'geodis_decoder_rest_ws',
+    'geodis_transport_ws',
+    'geodis_transport_edi',
+    'geodis_transport_rest_ws',
+]

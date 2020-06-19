@@ -62,7 +62,7 @@ class MyValidator(Validator):
             .replace(u"Ù", "U")
             .replace(u"œ", "oe")
             .replace(u"Œ", "OE")
-        ).encode('ascii', 'ignore') # cut remaining chars
+        ).encode('ascii', 'ignore')  # cut remaining chars
         return sanitized
 
 
@@ -177,8 +177,8 @@ class Api(object):
             return {
                 'schema': schema,
                 'default':
-                    schema.get('default') or
-                    v.normalized({}, schema),
+                    schema.get('default')
+                    or v.normalized({}, schema),
                 'type': schema.get('type', 'dict')
             }
 

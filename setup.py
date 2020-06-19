@@ -15,6 +15,9 @@ setup(
     install_requires=[
         'lxml', 'Jinja2', 'requests', 'cerberus', 'zplgrf',
         'unidecode'],
+    extras_require={
+        'test': ['pytest', 'pytest-pep8', 'pytest-cov', 'coverage', 'tox', 'flake8'],
+    },
     author="Hparfr <https://github.com/hparfr>",
     author_email="roulier@hpar.fr",
     description="Label parcels without pain",
